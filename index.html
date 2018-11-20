@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Uchu Studio</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">	
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="keyword" content="japanese florist, new website">
+	<meta name="description" content="Japanese florist promotional launch">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Camy Guibert">
+
+	<!-- pollyfills -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+</head>
+<body>
+	<section style="display: none;" class="container-loader" >
+		<div id="page-loader">
+			<img src="img/primary-logo.svg">
+			<div class="spinner-loader"></div>
+		</div>
+	</section>
+	<section style="display: none;" class="container-transition">
+		<div id="page-transition"></div>
+	</section>
+	<div id="cursor"></div>
+	<header>
+		<a onclick="pageTransition('.home')" class="logo" href="#"><img src="img/small-logo.svg"></a>
+		<a class="hamburger">
+			<img id="fafa-bar" src="img/fafa-bar-off.svg" data-off-src="img/fafa-bar-off.svg" data-on-src="img/fafa-bar-on.svg">
+		</a>
+		<nav id="nav">
+			<div class="cover-background">
+				<ul class="menu-container">
+					<li class="menu-item">
+						<a href="#" id="vision" onclick="pageTransition('.vision')">vision</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" id="services" onclick="pageTransition('.services')">services</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" id="contact" onclick="pageTransition('.contact')">contact</a>
+					</li>
+				</ul>
+				<img class="secondary-logo" src="img/secondary-logo.svg">
+				<div class="social-media">
+					<a href="https://www.facebook.com/ohfloraflowers">facebook</a>
+					<p>.</p>
+					<a href="https://www.instagram.com/ohflorastudio/">instagram</a>
+					<p>.</p>
+					<a href="https://za.pinterest.com/ohflorastudio/">pinterest</a>
+				</div>
+			</div>
+		</nav>
+		<section class="container intro"> 
+			<div class="layout page-a">
+				<img class="graphic-a" src="img/squigle.svg">
+				<img class="flower-intro" src="img/flower-intro.svg">
+				<p class="intro-text">
+					Welcome to Uchu Floral Studio, the Autumn edition. We are a fusion of reality versus imagination where the knowing becomes part actual and part tangible. We are all inhabitants within this universe that confine us. Only here, they are no borders and only wonders. 
+				</p>
+				<div class="site-cta">
+					<a class="enter-homepage" onclick="pageTransition('.home')" href="#">enter site</a>
+				</div>
+			</div> 
+		</section>
+	</header>
+	<main>
+		<section style="display: none;"  class="container home">
+			<div class="layout page-b">
+				<div class="homepage-img">
+					<img class="brush" src="img/brush.png">
+					<img class="graphic-homepage" src="img/palm-leaf.png">
+				</div>
+				<img class="heading" src="img/homepage-heading.svg">
+				<h1>Sands of Time</h1>
+				<p>This Autum season is based on the notion of Ikebana and the identity of our studio. So we are transporting you back to the birth of floral arrangements in Japan. A dreamscape of time. The Sands of Time.</p>
+				<a  class="homepage-cta" onclick="pageTransition('.vision')" href="#">more</a>
+			</div>
+			<!-- <canvas id="sand-particles"></canvas> -->
+		</section>
+<!-- 		<canvas id="sand-particles"></canvas>
+		<div id="background"></div> -->
+		<section style="display: none;" class="container vision">
+			<div class="layout page-c">
+				<img class="vision-heading" src="img/vision-heading.svg">
+				<p>Uchu is a floral design, creative direction and design studio based in Tuscany, Italy. Our florals are heavily influenced by nature, it's untamed romance and raw beauty. We believe that flowers should be on our menu everyday.</p>
+				<div class="pagenation">
+					<div class="scroll-right">next</div>	
+				</div>
+			</div>
+			<div style="display: none;" class="layout page-d">
+				<img class="concept-heading" src="img/concept-heading-30.svg">
+				<p></p>
+				<div class="pagenation">
+					<div class="scroll-back">back</div>
+					<div class="scroll-right-1">next</div>
+				</div>
+			</div>
+			<div style="display: none;" class="layout page-e">
+				<img class="theme-heading" src="img/homepage-heading.svg">
+				<p></p>
+				<div class="pagenation">
+					<div class="scroll-back-1">back</div>	
+				</div>
+			</div>
+		</section>
+		<section style="display: none;" class="container services">
+			<div class="layout page-f">
+				<img class="services-heading" src="img/services-heading.svg">
+				<p>Creating beautiful, alluring and memorable concepts is what we do best. We are available to work on all creative projects be it florals botanical installations, event design, experiences, editorials or content creation.</p>
+				<div class="pagenation">
+					<div class="scroll-right">next</div>
+				</div>
+			</div>
+			<div style="display: none;" class="layout page-g">
+				<img class="gallery-heading" src="img/gallery-heading-31.svg">
+				<img src="">
+				<img src="">
+				<img src="">
+				<img src="">
+				<p></p>
+				<div class="pagenation">
+					<div class="scroll-back">back</div>
+				</div>
+			</div>
+		</section>
+		<section style="display: none;" class="container contact">
+			<div class="layout page-h">
+				<img class="sub-heading" src="img/contact-heading.svg">
+				<div class="email-cta">
+					<a class="email" href="mailto:hello@uchu.com">hello@uchu.com</a>
+				</div>
+				<div class="contact-text">
+					<p>4 Chome, Bagno, Vignoni</p>
+					<p>Tuscany, Italy</p>
+					<p>089-3661</p>
+				</div>
+				<div class="social-media-contact">
+					<a href="https://www.facebook.com/ohfloraflowers">facebook</a>
+					<p>.</p>
+					<a href="https://www.instagram.com/ohflorastudio/">instagram</a>
+					<p>.</p>
+					<a href="https://za.pinterest.com/ohflorastudio/">pinterest</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+
+	</footer>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
